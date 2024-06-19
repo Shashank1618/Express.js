@@ -2,6 +2,7 @@
 //POST
 //PUT
 //DELETE
+//using Postman you can send any request
 
 const express=require("express");
 const app=express();
@@ -31,6 +32,7 @@ app.get("/",function(req,res){
     })
 });
 
+//input healthy and unhealthy kidney 
 app.post("/",function(req,res){
     const isHealthy=req.body.isHealthy;
     user[0].kidney.push({
